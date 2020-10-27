@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const ChildComponent = (props) => {
 console.log('Child', props)
     return(

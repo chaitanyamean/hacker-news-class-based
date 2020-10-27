@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import  ChildComponent from './ChildComp'
 
 import axios from 'axios';
 import Stories from './Stories';
@@ -24,22 +23,12 @@ class ParentClass extends Component{
 
 
     componentDidMount() {
-            // called the top story
 
-            // couple of lines code for fetching data
 
             this.fetchStoriesApi(this.state.apiStr);
     }
 
     componentDidUpdate(prevProp, prevState) {
-            // couple of lines code for fetching data
-
-            // prevProp
-            // prevState
-
-            // topstories --- i click askstories, this will be my current state
-
-            // prevstate is askstories --- current also askstories
 
             if(this.state.apiStr !== prevState.apiStr){
                 
@@ -120,28 +109,7 @@ class ParentClass extends Component{
         return(
             <div className="counter-div">
 
-                <button 
-                className="btn-cls"
-                onClick={this.decrement}
-                >Decrement</button>
-                    <span> {this.state.count} </span>
-                <button 
-                className="btn-cls"
-                onClick={this.increment}
-                >Increment</button>
-
-                <input onChange={this.handleClick}/>
-
-                <p>{this.state.text}</p>
                 
-
-                <ChildComponent 
-                count={this.state.count}
-                
-                 handleIncrement = {this.increment}/>
-
-
-        
 
                     <button onClick={this.topStories}>Top Stories</button>
                     <button onClick ={this.askStories}>Ask Stories</button>
