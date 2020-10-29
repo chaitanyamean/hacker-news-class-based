@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
 import ParentClass from './ParentClass';
-import HooksComponent from './hooks/hooksComp';
+import ReducerHooks from './hooks/ReducerHooks';
 
 function App() {
   return (
     <div className="App">
-    {/* <ParentClass /> */}
-
-    <HooksComponent />
+    appjs
+    {/* <EffectButton /> */}
+    <ReducerHooks />
     </div>
   );
 }

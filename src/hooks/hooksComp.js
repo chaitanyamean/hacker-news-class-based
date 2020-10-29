@@ -10,10 +10,6 @@ const HooksComponent = () => {
     const [apiStr, setApiStr] = useState('topstories')
     const [stories, setStories] = useState([])
 
-
-
-
-
     // to call some thing after ui rendering - api, subscribe, 
 
         useEffect(() => {
@@ -26,10 +22,7 @@ const HooksComponent = () => {
 
 
         // useEffect(() => {
-        //     const fetchApi = () => {
-        //         fetchStoriesApi(apiStr)
-        //     }
-        //     fetchApi()
+        //     if(count > 0) document.title = `${count} times clicked`
 
         // }, [count])
 
@@ -78,6 +71,7 @@ const HooksComponent = () => {
         <div>
             This is func component {count}
             <button onClick={() =>setApiStr('askstories')}>Ask stories</button>
+            <button onClick={() => setCount(count + 1)}>Increment</button>
         </div>
     )
 
