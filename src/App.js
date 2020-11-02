@@ -1,14 +1,16 @@
 import React from 'react';
 import './App.css';
-import ParentClass from './ParentClass';
-import ReducerHooks from './hooks/ReducerHooks';
+import CounterOne from './HOC12/Counter';
+import HoverOne from './HOC12/Hover';
 
 function App() {
   return (
     <div className="App">
-    appjs
-    {/* <EffectButton /> */}
-    <ReducerHooks />
+   
+      <CounterOne disable/>
+      <CounterOne default/>
+
+      <HoverOne />
     </div>
   );
 }
